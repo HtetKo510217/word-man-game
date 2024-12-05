@@ -14,10 +14,10 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-defineProps({
-  word: String,
-  guessedLetters: Array,
-})
+defineProps<{
+  word: string
+  guessedLetters: string[]
+}>()
 </script>
 
 <style scoped>
